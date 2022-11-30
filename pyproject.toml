@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "ansible-deploy-vmseries"
+version = "0.1.0"
+description = "Ansible playbook to push a new VM series firewall on VMware vCenter"
+authors = ["Calvin Remsburg <cremsburg.dev@gmail.com>"]
+license = "Apache 2.0"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+ansible = "^3.3.0"
+invoke = "^1.5.0"
+pyvmomi = "^7.0.2"
+
+
+[tool.poetry.dev-dependencies]
+invoke = "^1.7.1"
+flake8 = "^4.0.1"
+black = "^22.6.0"
+
+[tool.poetry.group.dev.dependencies]
+python-dotenv = "^0.21.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
